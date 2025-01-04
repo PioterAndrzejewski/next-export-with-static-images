@@ -3,6 +3,8 @@
 ## 🚀 **Why?**
 Next.js still does not natively support downloading external images and including them in the build output when generating static websites. Workarounds are required, and existing packages like [next-image-export-optimizer](https://www.npmjs.com/package/next-image-export-optimizer) often require predefining image lists before the build process. This approach becomes impractical when dynamically generating pages from external CMS sources like **Cosmic.js**.
 
+I was basing on this article: https://mytchall.dev/create-a-fully-static-next-js-site-with-local-images/
+
 ## 🛠️ **What Does It Do?**
 This script scans all generated HTML files, detects external image references, downloads them, and replaces the `src` and `srcset` attributes with local static assets.
 
