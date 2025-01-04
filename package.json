@@ -1,0 +1,13 @@
+{
+  "name": "next-export-with-static-images",
+  "scripts": {
+    "build": "next build",
+    "build-and-download": "next build && node fetchImages.js ./out"
+  },
+  "dependencies": {
+    "download": "^8.0.0",
+    "jsdom": "^25.0.1",
+    "next": "15.1.2",
+    "walk": "^2.3.15"
+  }
+}
